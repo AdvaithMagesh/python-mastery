@@ -2,11 +2,11 @@ import random
 secret = random.randint(1, 100)
 attempts = 0
 
-print("I am thinking of a number between 1 and 100. Guess the secret number")
+print("I am thinking of a number between 1 and 100. Guess the secret number!")
 
 while True:
     guess = int(input("Your guess: "))
-    attempts = attempts + 1
+    attempts += 1
     if guess > secret:
         print("Too high!")
     elif guess < secret:
